@@ -59,7 +59,17 @@ body {
     width: 1300px;
     margin: 0 auto;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        width: 690px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 300px;
+    }
+}
+}
 .top_menu {
     background: #fff;
     padding: 12px 0;
@@ -76,7 +86,19 @@ body {
     font-size: 14pt;
     position: relative;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .nav li {
+        display: inherit;
+        font-size: 14pt;
+        position: relative;
+    }
+}
+@media screen and (max-width: 768px){
+    .nav li {
+        display: inherit;
 
+    }
+}
 .nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -140,6 +162,44 @@ footer {
 .footer_menu ul a:hover {
     color: #b7b7cc;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer_menu {
+        margin: 0;
+        padding: 30px 0;
+        text-align: inherit;
+    }
+
+    .footer_menu ul {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .footer_menu li {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    footer{
+        padding: 0px ;
+    }
+    .footer_menu {
+        margin: 0;
+        padding: 30px 0;
+        text-align: inherit;
+    }
+
+
+    .footer_menu ul {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .footer_menu ul a{
+        font-size: 13pt;
+    }
+    .footer_menu li {
+        width: 50%;
+    }
+}
 
 .copyright {
     border-top: 1px solid #d6d6e1;
@@ -179,3 +239,25 @@ float: right;
 .icons li + li:hover a {
     background: url(../img/iconih.png);
 }
+    @media screen and (min-width: 768px) and (max-width: 1024px)  {
+        .copyright {
+            padding: 40px 0px;
+        }
+    }
+@media screen and (max-width: 768px){
+    .copyright {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 15px 0px;
+    }
+    .copyright_item{
+        font-size: 12pt;
+    }
+    .icons li a{
+        margin-bottom: 14px;
+    }
+    .icons li + li a{
+        margin-bottom: 14px;
+    }
+}
+
