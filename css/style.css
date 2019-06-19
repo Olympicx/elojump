@@ -59,20 +59,26 @@ body {
     width: 1300px;
     margin: 0 auto;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container{
+    .container {
         width: 690px;
     }
 }
-@media screen and (max-width: 768px){
-    .container{
+
+@media screen and (max-width: 768px) {
+    .container {
         width: 300px;
     }
 }
-}
+
 .top_menu {
     background: #fff;
     padding: 12px 0;
+}
+
+.navbar_logo_mob {
+    display: none;
 }
 
 .nav {
@@ -86,19 +92,30 @@ body {
     font-size: 14pt;
     position: relative;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .nav li {
         display: inherit;
         font-size: 14pt;
         position: relative;
     }
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .nav li {
         display: inherit;
 
     }
+
+    .navbar_logo {
+        display: none;
+    }
+
+    .navbar_logo_mob {
+        display: inherit;
+    }
 }
+
 .nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -162,6 +179,7 @@ footer {
 .footer_menu ul a:hover {
     color: #b7b7cc;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .footer_menu {
         margin: 0;
@@ -178,10 +196,12 @@ footer {
         width: 50%;
     }
 }
-@media screen and (max-width: 768px){
-    footer{
-        padding: 0px ;
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 0px;
     }
+
     .footer_menu {
         margin: 0;
         padding: 30px 0;
@@ -193,9 +213,11 @@ footer {
         flex-wrap: wrap;
         justify-content: flex-end;
     }
-    .footer_menu ul a{
+
+    .footer_menu ul a {
         font-size: 13pt;
     }
+
     .footer_menu li {
         width: 50%;
     }
@@ -212,9 +234,10 @@ footer {
     color: #a0a0b9;
     font-size: 15pt;
 }
-.social{
+
+.social {
     display: inline-block;
-float: right;
+    float: right;
 }
 
 .icons li {
@@ -229,34 +252,42 @@ float: right;
 
     background: url(../img/iconf.png);
 }
+
 .icons li:hover a {
     background: url(../img/iconfh.png);
 }
-.icons li + li a{
+
+.icons li + li a {
     background: url(../img/iconi.png);
     margin-left: 30px;
 }
+
 .icons li + li:hover a {
     background: url(../img/iconih.png);
 }
-    @media screen and (min-width: 768px) and (max-width: 1024px)  {
-        .copyright {
-            padding: 40px 0px;
-        }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .copyright {
+        padding: 40px 0px;
     }
-@media screen and (max-width: 768px){
+}
+
+@media screen and (max-width: 768px) {
     .copyright {
         display: flex;
         flex-direction: column-reverse;
         padding: 15px 0px;
     }
-    .copyright_item{
+
+    .copyright_item {
         font-size: 12pt;
     }
-    .icons li a{
+
+    .icons li a {
         margin-bottom: 14px;
     }
-    .icons li + li a{
+
+    .icons li + li a {
         margin-bottom: 14px;
     }
 }
