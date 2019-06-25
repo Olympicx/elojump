@@ -183,10 +183,12 @@ article img {
 #switch3:checked ~ #controls label:nth-child(2) {
     background: url("../img/arrowl.png") no-repeat;
     float: right;
-    margin: 312px 64px 0 0px;
     display: block;
     height: 35px;
     width: 35px;
+}
+#switch2:checked ~ #controls label:nth-child(1){
+    background: url('../img/arrowr.png') no-repeat;
 }
 
 #switch1:checked ~ #controls label:nth-child(2),
@@ -194,10 +196,14 @@ article img {
 #switch3:checked ~ #controls label:nth-child(1) {
     background: url('../img/arrowr.png') no-repeat;
     float: right;
-    margin: 312px 205px 0px 0px;
     display: block;
     height: 35px;
     width: 35px;
+    margin-left: 54px;
+}
+#switch2:checked ~ #controls label:nth-child(3){
+    background: url("../img/arrowl.png") no-repeat;
+    margin-right: 54px;
 }
 
 label, a {
@@ -222,9 +228,11 @@ label, a {
 
 
 #controls {
-    margin: -25% 0 0 0;
     width: 100%;
     height: 50px;
+    position: absolute;
+    bottom: 19px;
+    right: 211px;
 }
 
 #active label {
@@ -266,21 +274,47 @@ label, a {
 #controls label {
     transition: opacity 0.2s ease-out;
 }
+.switches{
+    position: absolute;
+    display: inline-block;
+    bottom: 35px;
+    right: 253px;
+}
 
+.switches li {
+    display: inline-block;
+    margin-right: 11px;
+}
+.switches li a{
+    display: block;
+    width: 4px;
+    height: 15px;
+    background: #fff;
+    margin-top: 457px;
+}
+.active_switch {
+    background: #67bd06;
+    height: 30px;
+    display: block;
+}
+/* надпись на слайдере*/
 .title{
     color: #fff;
     position: absolute;
-    margin-top: 100px;
-    margin-left: 300px;
+    top: 100px;
+    left: 300px;
 }
-.title span{
-    font-size: 80px;
+.big_title{
+    font-size: 80px!important;
 }
 .title p{
     font-size: 24px;
+    text-align: initial;
 }
 .title_color{
+    font-size: 80px!important;
     color: #67bd06;
+    padding-bottom: 40px;
 }
 .button{
     background: #67bd06;
@@ -291,7 +325,9 @@ label, a {
     text-decoration: none;
     text-align: center;
     font-size: 20px;
-    margin: 0 auto;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 /* footer*/
 footer {
