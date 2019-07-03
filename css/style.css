@@ -179,7 +179,11 @@ article img {
 #desktop:checked ~ #slider {
     max-width: 1900px;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #desktop:checked ~ #slider {
+        max-width: 900px;
+    }
+}
 
 #switch1:checked ~ #controls label:nth-child(3),
 #switch2:checked ~ #controls label:nth-child(1),
@@ -348,6 +352,23 @@ label, a {
     margin-top: 40px;
     text-transform: uppercase;
     font-weight: 600;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .title{
+        top: 115px;
+        left: 100px;
+    }
+    .big_title{
+        font-size: 60px!important;
+    }
+    .title p{
+        font-size: 20px;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+   
+
 }
 /* footer*/
 footer {
