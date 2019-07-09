@@ -396,9 +396,7 @@ label, a {
     bottom: 150px;
     z-index: 66;
 }
-.wrap_services:nth-child(1){
-    bottom: 0px;
-}
+
 .boost_services{
     background: #fff;
     width: 420px;
@@ -406,9 +404,16 @@ label, a {
     display: inline-block;
     margin-left: 20px;
     box-sizing: border-box;
+    float: left;
 }
 .boost_services img{
-    margin: 12px 10px;
+    margin: 27px 55px;
+}
+.boost_services:nth-child(2) img{
+    margin: 44px 124px;
+}
+.boost_services:nth-child(3) img{
+    margin: 46px 100px;
 }
 .boost_services h3{
     font-size: 30px;
@@ -433,6 +438,12 @@ label, a {
     margin: 40px auto;
     text-transform: uppercase;
     font-weight: 600;
+}
+.boost_services:nth-child(2) .button_services{
+    margin: 78px auto;
+}
+.boost_services:nth-child(3) .button_services{
+    margin: 78px auto;
 }
 .button_services:hover {
     background: #ff7366;
