@@ -146,6 +146,7 @@ body {
     left: calc(0em - 4px);
     border-right: 6px solid #67bd06;
 }
+
 /* end header*/
 /* section 1 (слайдер)*/
 #slider {
@@ -179,7 +180,8 @@ article img {
 #desktop:checked ~ #slider {
     max-width: 1900px;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     #desktop:checked ~ #slider {
         max-width: 900px;
     }
@@ -194,7 +196,8 @@ article img {
     height: 35px;
     width: 35px;
 }
-#switch2:checked ~ #controls label:nth-child(1){
+
+#switch2:checked ~ #controls label:nth-child(1) {
     background: url('../img/arrowr.png') no-repeat;
 }
 
@@ -208,7 +211,8 @@ article img {
     width: 35px;
     margin-left: 54px;
 }
-#switch2:checked ~ #controls label:nth-child(3){
+
+#switch2:checked ~ #controls label:nth-child(3) {
     background: url("../img/arrowl.png") no-repeat;
     margin-right: 54px;
 }
@@ -252,7 +256,7 @@ label, a {
 }
 
 #active {
-    margin: 23 % 0 0;
+    margin: 23% 0 0;
     text-align: center;
 }
 
@@ -282,7 +286,8 @@ label, a {
 #controls label {
     transition: opacity 0.2s ease-out;
 }
-.switches{
+
+.switches {
     position: absolute;
     display: inline-block;
     bottom: 35px;
@@ -294,21 +299,24 @@ label, a {
     display: inline-block;
     margin-right: 11px;
 }
-.switches li a{
+
+.switches li a {
     display: block;
     width: 4px;
     height: 15px;
     background: #fff;
     margin-top: 457px;
 }
+
 .active_switch {
     background: #67bd06;
     height: 30px;
     display: block;
 }
+
 /* градиент на слайдере*/
-.gradient{
-    background-image: linear-gradient(90deg, #336 45%, rgba(0,0,0,0), #336 98%);
+.gradient {
+    background-image: linear-gradient(90deg, #336 45%, rgba(0, 0, 0, 0), #336 98%);
     position: absolute;
     z-index: 30;
     right: 0;
@@ -321,26 +329,30 @@ label, a {
 
 
 /* надпись на слайдере*/
-.title{
+.title {
     color: #fff;
     position: absolute;
     top: 100px;
     left: 300px;
     z-index: 55;
 }
-.big_title{
-    font-size: 80px!important;
+
+.big_title {
+    font-size: 80px !important;
 }
-.title p{
+
+.title p {
     font-size: 24px;
     text-align: initial;
 }
-.title_color{
-    font-size: 80px!important;
+
+.title_color {
+    font-size: 80px !important;
     color: #67bd06;
     padding-bottom: 40px;
 }
-.button{
+
+.button {
     background: #67bd06;
     color: #fff;
     display: block;
@@ -353,31 +365,36 @@ label, a {
     text-transform: uppercase;
     font-weight: 600;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .title{
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .title {
         top: 115px;
         left: 100px;
     }
-    .big_title{
-        font-size: 60px!important;
+
+    .big_title {
+        font-size: 60px !important;
     }
-    .title p{
+
+    .title p {
         font-size: 20px;
     }
 
 }
 
 /* section 2 */
-.services{
+.services {
     position: relative;
     background-color: #f2f2fa;
 }
-.fon{
+
+.fon {
     width: 100%;
     height: 100%;
     display: block;
 }
-.services h2{
+
+.services h2 {
     font-size: 48px;
     font-weight: 600;
     color: #141558;
@@ -385,16 +402,18 @@ label, a {
     top: 120px;
     left: 40%;
 }
-.services span{
+
+.services span {
     color: #67bd06;
 }
-.wrap_services{
+
+.wrap_services {
     position: absolute;
     bottom: 150px;
     z-index: 66;
 }
 
-.boost_services{
+.boost_services {
     background: #fff;
     width: 420px;
     height: 542px;
@@ -403,27 +422,33 @@ label, a {
     box-sizing: border-box;
     float: left;
 }
-.boost_services img{
+
+.boost_services img {
     margin: 27px 55px;
 }
-.boost_services:nth-child(2) img{
+
+.boost_services:nth-child(2) img {
     margin: 44px 124px;
 }
-.boost_services:nth-child(3) img{
+
+.boost_services:nth-child(3) img {
     margin: 46px 100px;
 }
-.boost_services h3{
+
+.boost_services h3 {
     font-size: 30px;
     text-align: center;
     color: #141558;
 }
-.boost_services p{
+
+.boost_services p {
     font-size: 18px;
     text-align: center;
     color: #141558;
     padding: 30px 40px;
 }
-.button_services{
+
+.button_services {
     background: #ff5443;
     color: #fff;
     display: block;
@@ -436,22 +461,28 @@ label, a {
     text-transform: uppercase;
     font-weight: 600;
 }
-.boost_services:nth-child(2) .button_services{
+
+.boost_services:nth-child(2) .button_services {
     margin: 78px auto;
 }
-.boost_services:nth-child(3) .button_services{
+
+.boost_services:nth-child(3) .button_services {
     margin: 78px auto;
 }
+
 .button_services:hover {
     background: #ff7366;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .wrap_services{
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrap_services {
         bottom: 50px;
     }
-    .fon{
+
+    .fon {
         display: none;
     }
+
     .services {
         position: relative;
         background-color: #f2f2fa;
@@ -459,7 +490,8 @@ label, a {
         width: 100%;
         height: 943px;
     }
-    .services h2{
+
+    .services h2 {
         top: 40px;
         left: 28%;
     }
@@ -472,40 +504,75 @@ label, a {
         margin-bottom: 15px;
         box-sizing: border-box;
     }
-    .boost_services:nth-child(2){
-          height: 230px;
-      }
-    .boost_services:nth-child(3){
+
+    .boost_services:nth-child(2) {
         height: 230px;
     }
-    .boost_services img{
+
+    .boost_services:nth-child(3) {
+        height: 230px;
+    }
+
+    .boost_services img {
         float: left;
         margin: 45px 10px;
     }
+
     .boost_services:nth-child(2) img {
         margin: 44px 76px;
     }
+
     .boost_services:nth-child(3) img {
         margin: 46px 53px;
     }
+
     .boost_services h3 {
         text-align: inherit;
         padding-top: 20px;
     }
-    .boost_services p{
+
+    .boost_services p {
         text-align: inherit;
     }
-    .button_services{
+
+    .button_services {
         margin: -12px 320px;
     }
+
     .boost_services:nth-child(2) .button_services {
         margin: -6px 321px;
     }
+
     .boost_services:nth-child(3) .button_services {
         margin: -7px 323px;
     }
 }
-    /* footer*/
+@media screen and (max-width: 768px){
+    .fon {
+        display: none;
+    }
+    .wrap_services {
+        bottom: 20px;
+    }
+    .services {
+        position: relative;
+        background-color: #f2f2fa;
+        display: block;
+        width: 100%;
+        height: 1900px;
+    }
+    .boost_services {
+        margin-left: -61px;
+        margin-bottom: 15px;
+    }
+    .services h2{
+        top: 90px;
+        left: 22%;
+    
+    }
+
+}
+/* footer*/
 footer {
     left: 0;
     bottom: 0;
