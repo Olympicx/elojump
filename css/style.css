@@ -386,6 +386,7 @@ label, a {
 .services {
     position: relative;
     background-color: #f2f2fa;
+    min-height: 900px;
 }
 
 .fon {
@@ -399,8 +400,8 @@ label, a {
     font-weight: 600;
     color: #141558;
     position: absolute;
-    top: 120px;
-    left: 40%;
+    top: 95px;
+    left: 39%;
 }
 
 .services span {
@@ -411,16 +412,16 @@ label, a {
     position: absolute;
     bottom: 150px;
     z-index: 66;
+    display: flex;
 }
 
 .boost_services {
     background: #fff;
     width: 420px;
     height: 542px;
-    display: inline-block;
-    margin-left: 20px;
+    margin: 10px;
     box-sizing: border-box;
-    float: left;
+
 }
 
 .boost_services img {
@@ -473,10 +474,37 @@ label, a {
 .button_services:hover {
     background: #ff7366;
 }
+@media screen and (min-width: 1024px) and (max-width: 1340px){
+.container{
+    width: 1040px;
+}
+    .boost_services{
+        width: 323px;
+    }
+    .boost_services img {
+        margin: 25px 13px;
+    }
+    .boost_services:nth-child(2) img {
+        margin: 44px 75px;
+    }
+    .boost_services:nth-child(3) img {
+        margin: 46px 52px;
+    }
+    .button_services {
+        margin: 22px auto;
+    }
+    .boost_services:nth-child(2) .button_services {
+        margin: 72px auto;
+    }
+    .boost_services:nth-child(3) .button_services {
+        margin: 72px auto;
+    }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
     .wrap_services {
         bottom: 50px;
+        display: block;
     }
 
     .fon {
@@ -499,7 +527,7 @@ label, a {
     .boost_services {
         background: #fff;
         width: 660px;
-        height: 258px;
+        height: 280px;
         display: block;
         margin-bottom: 15px;
         box-sizing: border-box;
@@ -553,6 +581,7 @@ label, a {
     }
     .wrap_services {
         bottom: 20px;
+        display: block;
     }
     .services {
         position: relative;
@@ -568,7 +597,7 @@ label, a {
     .services h2{
         top: 90px;
         left: 22%;
-    
+
     }
 
 }
@@ -604,6 +633,14 @@ footer {
 
 .footer_menu ul a:hover {
     color: #b7b7cc;
+}
+@media screen and (min-width: 1024px) and (max-width: 1340px){
+    .footer_menu {
+        margin: 0;
+        padding: 30px 36px;
+        text-align: inherit;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
