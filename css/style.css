@@ -519,7 +519,7 @@ label, a {
         height: 943px;
     }
 
-    .services h2 {
+        .services h2 {
         top: 40px;
         left: 28%;
     }
@@ -601,6 +601,31 @@ label, a {
     }
 
 }
+
+/* section 3 */
+.features {
+    position: relative;
+    background-color: #f2f2fa;
+}
+
+.features h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #141558;
+    position: absolute;
+    top:  150px;
+    left: 39%;
+}
+.features span{
+    color: #67bd06;
+}
+.wrap_features {
+    position: absolute;
+    bottom: 150px;
+    z-index: 66;
+    display: flex;
+}
+
 /* footer*/
 footer {
     left: 0;
