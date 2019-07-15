@@ -621,11 +621,24 @@ label, a {
 }
 .wrap_features {
     position: absolute;
-    bottom: 150px;
+    bottom: 580px;
     z-index: 66;
     display: flex;
 }
-
+.features_services h3{
+    color: #fff;
+    font-size: 29px;
+}
+.features_services p{
+    color: #fff;
+    font-size: 17px;
+}
+.content{
+    color: #fff;
+    font-size: 22px;
+    bottom: 150px;
+    position: absolute;
+}
 /* footer*/
 footer {
     left: 0;
