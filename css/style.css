@@ -621,13 +621,27 @@ label, a {
 }
 .wrap_features {
     position: absolute;
-    bottom: 580px;
+    bottom: 600px;
     z-index: 66;
-    display: flex;
+
+}
+.features_services{
+    margin-right: 147px;
+    margin-left: 32px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    height: 305px;
+    width: 305px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.features_services:nth-child(4){
+    margin-left: 294px;
 }
 .features_services h3{
     color: #fff;
     font-size: 29px;
+    padding: 30px 0;
 }
 .features_services p{
     color: #fff;
@@ -635,8 +649,8 @@ label, a {
 }
 .content{
     color: #fff;
-    font-size: 22px;
-    bottom: 150px;
+    font-size: 21px;
+    bottom: 354px;
     position: absolute;
 }
 /* footer*/
