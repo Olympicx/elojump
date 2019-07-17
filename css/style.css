@@ -607,13 +607,17 @@ label, a {
     position: relative;
     background-color: #f2f2fa;
 }
-
+.fon_features{
+    min-height: 1760px;
+    width: 100%;
+    position: relative;
+}
 .features h2 {
     font-size: 48px;
     font-weight: 600;
     color: #141558;
     position: absolute;
-    top:  150px;
+    top:  170px;
     left: 39%;
 }
 .features span{
@@ -621,13 +625,11 @@ label, a {
 }
 .wrap_features {
     position: absolute;
-    bottom: 600px;
-    z-index: 66;
-
+   z-index: 66;
+    bottom: 700px;
 }
 .features_services{
-    margin-right: 147px;
-    margin-left: 32px;
+    margin-left: 116px;
     margin-bottom: 30px;
     box-sizing: border-box;
     height: 305px;
@@ -649,10 +651,28 @@ label, a {
 }
 .content{
     color: #fff;
-    font-size: 21px;
-    bottom: 354px;
+    font-size: 22px;
+    bottom: 360px;
     position: absolute;
+    right: 70px;
+    left: 70px;
+
 }
+@media screen and (min-width: 1024px) and (max-width: 1340px){
+    .wrap_features{
+        bottom: 718px;
+    }
+    .features_services{
+        margin-left: 40px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1040px){
+    .features h2{
+        top: 90px;
+    }
+    
+}
+
 /* footer*/
 footer {
     left: 0;
