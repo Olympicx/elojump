@@ -727,6 +727,27 @@ label, a {
         margin: 0;
     }
 }
+/* section 4 */
+.payment{
+    background-color: #f2f2fa;
+}
+.payment h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #141558;
+    position: absolute;
+    top: 3437px;
+    left: 33%;
+}
+.payment span{
+    color: #67bd06;
+}
+.payment_services{
+    display: flex;
+}
+.payment_services div{
+    width: 160px;
+}
 /* footer*/
 footer {
     left: 0;
