@@ -401,7 +401,7 @@ label, a {
     color: #141558;
     position: absolute;
     top: 95px;
-    left: 39%;
+    left: 36%;
 }
 
 .services span {
@@ -618,7 +618,7 @@ label, a {
     color: #141558;
     position: absolute;
     top:  170px;
-    left: 39%;
+    left: 36%;
 }
 .features span{
     color: #67bd06;
@@ -730,13 +730,14 @@ label, a {
 /* section 4 */
 .payment{
     background-color: #f2f2fa;
+    min-height: 280px;
 }
 .payment h2 {
     font-size: 48px;
     font-weight: 600;
     color: #141558;
     position: absolute;
-    top: 3437px;
+    top: 3470px;
     left: 33%;
 }
 .payment span{
@@ -744,10 +745,34 @@ label, a {
 }
 .payment_services{
     display: flex;
+    position: absolute;
+    top: 3623px;
 }
+
 .payment_services div{
-    width: 160px;
+    width: 125px;
+    margin: 10px;
 }
+.payment_services img{
+    width: 290px;
+}
+
+/* section 5 */
+.contact_us {
+    display: block;
+    background: #fff;
+}
+.contact_us h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: #141558;
+    text-align: center;
+    margin: 95px 0;
+}
+.contact_us span{
+    color: #67bd06;
+}
+
 /* footer*/
 footer {
     left: 0;
@@ -767,6 +792,7 @@ footer {
 
 .footer_menu ul {
     display: flex;
+
 }
 
 .footer_menu ul a {
