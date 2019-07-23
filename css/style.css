@@ -255,10 +255,7 @@ label, a {
     background: #bbb;
 }
 
-#active {
-    margin: 23% 0 0;
-    text-align: center;
-}
+
 
 #active label:hover {
     background: #76c8ff;
@@ -772,7 +769,57 @@ label, a {
 .contact_us span{
     color: #67bd06;
 }
+.contact_services{
+    width: 860px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
 
+}
+ textarea {
+    width: 100%;
+     max-height: 120px;
+    padding: 12px;
+    border: 1px solid #4b4b84;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+     color: #4b4b84;
+}
+.input, select{
+    width: 420px;
+    height: 60px;
+    padding: 12px;
+    border: 1px solid #4b4b84;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #4b4b84;
+}
+.input{
+    margin-left: 17px;
+}
+.contact_button {
+    background: #ff5443;
+    color: #fff;
+    display: block;
+    width: 250px;
+    padding: 12px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+}
+.contact_button:hover {
+    background: #ff7366;
+}
 /* footer*/
 footer {
     left: 0;
@@ -781,7 +828,7 @@ footer {
     background: #fff;
     width: 100%;
     border-top: 1px solid #343468;
-
+box-sizing: border-box;
 }
 
 .footer_menu {
