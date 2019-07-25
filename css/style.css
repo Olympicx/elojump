@@ -49,6 +49,9 @@ table {
 }
 
 /* start */
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: Montserrat, sans-serif;
     font-size: 10px;
@@ -56,21 +59,11 @@ body {
 }
 
 .container {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        width: 690px;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 300px;
-    }
-}
 
 .top_menu {
     background: #fff;
@@ -472,9 +465,7 @@ label, a {
     background: #ff7366;
 }
 @media screen and (min-width: 1024px) and (max-width: 1340px){
-.container{
-    width: 1040px;
-}
+
     .boost_services{
         width: 323px;
     }
@@ -605,9 +596,10 @@ label, a {
     background-color: #f2f2fa;
 }
 .fon_features{
-    min-height: 1760px;
+height: 1375px;
     width: 100%;
     position: relative;
+    background-size: cover;
 }
 .features h2 {
     font-size: 48px;
@@ -623,7 +615,7 @@ label, a {
 .wrap_features {
     position: absolute;
    z-index: 66;
-    bottom: 700px;
+    bottom: 390px;
 }
 .features_services{
     margin-left: 116px;
@@ -648,8 +640,8 @@ label, a {
 }
 .content{
     color: #fff;
-    font-size: 22px;
-    bottom: 360px;
+    font-size: 18px;
+    bottom: 125px;
     position: absolute;
     right: 70px;
     left: 70px;
@@ -657,7 +649,7 @@ label, a {
 }
 @media screen and (min-width: 1024px) and (max-width: 1340px){
     .wrap_features{
-        bottom: 718px;
+        bottom: 368px;
     }
     .features_services{
         margin-left: 40px;
@@ -727,23 +719,21 @@ label, a {
 /* section 4 */
 .payment{
     background-color: #f2f2fa;
-    min-height: 280px;
+    min-height: 390px;
 }
 .payment h2 {
     font-size: 48px;
     font-weight: 600;
     color: #141558;
-    position: absolute;
-    top: 3470px;
-    left: 33%;
+    text-align: center;
+    padding-top: 115px;
 }
 .payment span{
     color: #67bd06;
 }
 .payment_services{
     display: flex;
-    position: absolute;
-    top: 3623px;
+    margin: 87px auto;
 }
 
 .payment_services div{
@@ -753,6 +743,17 @@ label, a {
 .payment_services img{
     width: 290px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1340px){
+    .payment_services div {
+        width: 95px;
+    }
+    .payment_services img {
+        width: 253px;
+    }
+
+
+}
+
 
 /* section 5 */
 .contact_us {
@@ -789,7 +790,7 @@ label, a {
      color: #4b4b84;
 }
 .input, select{
-    width: 420px;
+    width: 400px;
     height: 60px;
     padding: 12px;
     border: 1px solid #4b4b84;
@@ -820,6 +821,8 @@ label, a {
 .contact_button:hover {
     background: #ff7366;
 }
+
+
 /* footer*/
 footer {
     left: 0;
