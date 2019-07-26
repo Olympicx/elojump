@@ -92,6 +92,9 @@ body {
         font-size: 14pt;
         position: relative;
     }
+    .container{
+        width: 700px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -106,6 +109,9 @@ body {
 
     .navbar_logo_mob {
         display: inherit;
+    }
+    .container{
+        width: 300px;
     }
 }
 
@@ -508,6 +514,7 @@ label, a {
     }
 
         .services h2 {
+            font-size: 40px;
         top: 40px;
         left: 28%;
     }
@@ -543,6 +550,7 @@ label, a {
     }
 
     .boost_services h3 {
+        font-size: 24px;
         text-align: inherit;
         padding-top: 20px;
     }
@@ -657,6 +665,7 @@ height: 1375px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1040px){
     .features h2{
+        font-size: 40px;
         top: 90px;
     }
     .features_services{
@@ -677,9 +686,10 @@ height: 1375px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .wrap_features{
-        bottom: 492px;
+        bottom: 130px;
     }
     .features h2 {
+        font-size: 40px;
         top: 142px;
         left: 29%;
     }
@@ -696,6 +706,14 @@ height: 1375px;
         float: left;
         margin-right: 10px;
     }
+    .features_services h3 {
+        color: #fff;
+        font-size: 24px;
+    }
+    .content {
+        bottom: 60px;
+
+    }
 }
 @media screen and (max-width: 768px){
     .features h2 {
@@ -704,7 +722,7 @@ height: 1375px;
         font-size: 24px;
     }
     .wrap_features {
-        bottom: -173px;
+        bottom: 230px;
     }
     .features_services {
         margin: 0;
@@ -715,6 +733,17 @@ height: 1375px;
     .features_services:nth-child(5) {
         margin: 0;
     }
+    .wrap_features img{
+        float: left;
+        margin-right: 10px;
+    }
+    .features_services h3 {
+        font-size: 20px;
+    }
+    .features_services p {
+        font-size: 16px;
+    }
+
 }
 /* section 4 */
 .payment{
@@ -734,6 +763,7 @@ height: 1375px;
 .payment_services{
     display: flex;
     margin: 87px auto;
+    justify-content: center;
 }
 
 .payment_services div{
@@ -741,17 +771,17 @@ height: 1375px;
     margin: 10px;
 }
 .payment_services img{
-    width: 290px;
+    width: 320px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1340px){
     .payment_services div {
         width: 95px;
     }
-    .payment_services img {
-        width: 253px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .payment_services div {
+        width: 90px;
     }
-
-
 }
 
 
