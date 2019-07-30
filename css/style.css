@@ -716,15 +716,19 @@ height: 1375px;
     }
 }
 @media screen and (max-width: 768px){
+    .fon_features {
+        min-height: 1625px;
+    }
     .features h2 {
-        top: 116px;
+        top: 66px;
         left: 28%;
         font-size: 40px;
     }
     .wrap_features {
-        bottom: 230px;
+        bottom: 220px;
     }
     .features_services {
+        height: 250px;
         margin: 0;
     }
     .features_services:nth-child(4) {
@@ -743,7 +747,9 @@ height: 1375px;
     .features_services p {
         font-size: 16px;
     }
-
+    .content {
+        bottom: 20px;
+    }
 }
 /* section 4 */
 .payment{
@@ -764,23 +770,32 @@ height: 1375px;
     display: flex;
     margin: 87px auto;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .payment_services div{
-    width: 125px;
+    width: 180px;
     margin: 10px;
 }
 .payment_services img{
-    width: 320px;
+
 }
 @media screen and (min-width: 1024px) and (max-width: 1340px){
     .payment_services div {
-        width: 95px;
+        width: 114px;
+    }
+    .payment_services img {
+        width: 130px;
+        height: 85px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .payment_services div {
-        width: 90px;
+        width: 178px;
+    }
+    .payment_services img {
+        width: 120px;
+        height: 75px;
     }
 }
 
