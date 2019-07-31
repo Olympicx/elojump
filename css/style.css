@@ -609,6 +609,15 @@ height: 1375px;
     position: relative;
     background-size: cover;
 }
+.fon_features:after {
+    content: "";
+    background-image: url('../img/axe_left.png');
+    width: 180px;
+    height: 180px;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+}
 .features h2 {
     font-size: 48px;
     font-weight: 600;
@@ -774,7 +783,7 @@ height: 1375px;
 }
 
 .payment_services div{
-    width: 180px;
+    width: 145px;
     margin: 10px;
 }
 .payment_services img{
