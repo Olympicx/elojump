@@ -1118,3 +1118,8 @@ box-sizing: border-box;
 .faq_title span{
     color: #67bd06;
 }
+
+/*section 3 */
+.faq{
+    background: #f2f2fa;
+}
