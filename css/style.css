@@ -145,6 +145,9 @@ body {
     left: calc(0em - 4px);
     border-right: 6px solid #67bd06;
 }
+.nav {
+    display: none;
+}
 
 /* end header*/
 /* section 1 (слайдер)*/
@@ -1066,7 +1069,7 @@ box-sizing: border-box;
     margin: 0;
     border-top: 1px solid #f1f1f1;
     box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
-
+    height: 100px;
 }
 
 .faq_menu ul {
@@ -1076,6 +1079,7 @@ box-sizing: border-box;
 }
 .faq_menu li{
     padding: 30px 0;
+
 }
 .faq_menu ul a {
     font-size: 18px;
@@ -1092,15 +1096,16 @@ box-sizing: border-box;
     color: #141558;
 
 }
-.faq_active {
+#faq_active {
     background: #fff;
     border-top: 4px solid #67bd06;
     box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75);
 }
-.faq_active a{
+#faq_active a{
     color: #141558!important;
 
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1148px){
     .faq_menu ul a {
         font-size: 17px;
@@ -1114,7 +1119,33 @@ box-sizing: border-box;
         padding: 13px 0;
     }
 }
+@media screen and (max-width: 768px){
+    .faq_nav {
+        min-width: 100%;
+        min-height: 100px;
+        display: flex;
+        overflow-x: auto;
+    }
+    .faq_menu li{
+        padding: 30px 0;
+        min-width: 300px;
+    }
+.faq_nav::-webkit-scrollbar {
+    display: none;
+}
+    .faq_menu ul a {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 80px;
+        text-align: center;
+        text-transform: uppercase;
 
+    }
+    .faq_menu ul {
+        height: 100px;
+    }
+
+}
 /*section 2*/
 .faq_title {
     position: relative;
@@ -1135,7 +1166,30 @@ box-sizing: border-box;
 .faq_title span{
     color: #67bd06;
 }
+@media screen and (max-width: 768px) {
+.faq_title{
+    position:inherit;
+    height: 100px;
+    background: #f2f2fa;
+}
+.faq_title img{
+    display: none;
 
+}
+    .faq_title h2 {
+         position: inherit;
+        font-size: 40px;
+        font-weight: 600;
+        top: inherit;
+        color: #141558;
+        transform: inherit;
+        left: inherit;
+        text-align: center;
+        padding: 48px 0;
+    }
+
+
+}
 /*section 3 */
 .faq{
     background: #f2f2fa;
@@ -1167,4 +1221,18 @@ padding-bottom: 20px;
     list-style: square;
     padding-left: 20px;
     padding-bottom: 20px;
+}
+@media screen and (max-width: 768px){
+    .faq h3{
+        font-size: 18px;
+        padding: 30px;
+    }
+    .faq_accordion li{
+        font-size: 14px;
+    }
+    .faq_accordion ul{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
 }
