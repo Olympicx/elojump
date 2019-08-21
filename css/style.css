@@ -78,6 +78,7 @@ body {
     margin: 0;
     padding: 0;
     float: right;
+
 }
 
 .nav li {
@@ -148,11 +149,13 @@ body {
     border-right: 6px solid #67bd06;
 }
 
-.nav {
-    display: none;
-}
+/*.nav {*/
+/*    display: none;*/
+/*}*/
 
 /* end header*/
+
+
 /* section 1 (слайдер)*/
 #slider {
     position: relative;
@@ -495,7 +498,7 @@ label, a {
 .wrap_services {
     z-index: 66;
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .boost_services {
@@ -582,11 +585,11 @@ label, a {
     }
 
     .boost_services:nth-child(2) .button_services {
-        margin: 72px auto;
+        margin: 52px auto;
     }
 
     .boost_services:nth-child(3) .button_services {
-        margin: 72px auto;
+        margin: 52px auto;
     }
 
 }
@@ -600,7 +603,7 @@ label, a {
         background-color: #f2f2fa;
         background-image: none;
         display: block;
-        height: 990px;
+        min-height: 1050px;
     }
 
     .services h2 {
@@ -672,7 +675,7 @@ label, a {
         background-image: none;
         display: block;
         width: 100%;
-        height: 1900px;
+        min-height: 2020px;
     }
 
     .boost_services {
@@ -687,34 +690,52 @@ label, a {
 .features {
     position: relative;
     background-color: #f2f2fa;
+    height: 1375px;
+    background-image: url("../img/league of legends_home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 
 }
 
-.fon_features {
+/*.fon_features {
     height: 1375px;
     width: 100%;
     position: relative;
     background-size: cover;
-}
+}*/
 
-.fon_features:after {
+.features:after {
     content: "";
     background-image: url('../img/axe_left.png');
-    width: 180px;
-    height: 180px;
     background-repeat: no-repeat;
     position: absolute;
     display: block;
+    bottom: -170px;
+    background-position: left bottom;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+.features:before {
+    content: "";
+    background-image: url('../img/axe_right.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    bottom: -170px;
+    background-position: right bottom;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
 }
 
 .features h2 {
     font-size: 48px;
     font-weight: 600;
     color: #141558;
-    position: absolute;
-    top: 12%;
-    right: 50%;
-    transform: translate(50%, -10%);
+    text-align: center;
+    padding-top: 118px;
 }
 
 .features span {
@@ -775,7 +796,8 @@ label, a {
 @media screen and (min-width: 1024px) and (max-width: 1040px) {
     .features h2 {
         font-size: 40px;
-        top: 90px;
+        text-align: center;
+        padding-top: 118px;
     }
 
     .features_services {
@@ -786,9 +808,7 @@ label, a {
         bottom: 535px;
     }
 
-    .features h2 {
-        left: 30%;
-    }
+
 
     .features_services:nth-child(4) {
         margin-left: 146px;
@@ -806,9 +826,7 @@ label, a {
 
     .features h2 {
         font-size: 40px;
-        top: 7%;
-        right: 47%;
-        transform: translate(45%, -10%);
+
     }
 
     .features_services {
@@ -840,17 +858,20 @@ label, a {
 }
 
 @media screen and (max-width: 768px) {
-    .fon_features {
+    .features {
         min-height: 1625px;
     }
 
     .features h2 {
-        top: 4%;
-        right: 47%;
-        transform: translate(45%, -10%);
-        font-size: 40px;
+       padding-top: 50px;
+        font-size: 36px;
     }
-
+    .features:after{
+        display: none;
+    }
+    .features:before{
+        display: none;
+    }
     .wrap_features {
         bottom: 220px;
     }
@@ -1420,8 +1441,28 @@ footer {
 /*page error 404*/
 
 .error{
-background-image: url("../img/1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+background-color: #f1f1fa;
     min-height: 757px;
+    position: relative;
+}
+.error_title{
+    position: absolute;
+    top: 125px;
+}
+.error_title h2{
+    font-size: 200px;
+    font-weight: 800;
+    color: #141558;
+padding-bottom: 55px;
+}
+
+.error_title p{
+    font-size: 40px;
+    color: #141558;
+padding-bottom: 40px;
+}
+.error_title a{
+    font-size: 16px;
+    color: #ff5443;
+
 }
