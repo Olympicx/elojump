@@ -1087,7 +1087,7 @@ label, a {
     }
 }
 
-/* section 4 */
+ /*section 4 */
 .payment {
     background-color: #f2f2fa;
     min-height: 390px;
@@ -1629,6 +1629,9 @@ background-color: #f1f1fa;
     min-height: 757px;
     position: relative;
 }
+.fon_mob {
+    display: none;
+}
 .error_title{
     position: absolute;
     top: 125px;
@@ -1648,5 +1651,53 @@ padding-bottom: 40px;
 .error_title a{
     font-size: 16px;
     color: #ff5443;
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1240px){
+    .error{
+        min-height: 500px;
+    }
+    .error_title {
+        top: 60px;
+        left: 130px;
+    }
+    .error_title h2{
+        font-size: 100px;
+    }
+    .error_title p{
+        font-size: 24px;
+
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .error{
+        min-height: 440px;
+    }
+    .error_title {
+        top: 60px;
+        left: 130px;
+    }
+    .error_title h2{
+        font-size: 100px;
+    }
+    .error_title p{
+        font-size: 24px;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .fon {
+        display: none;
+    }
+    .fon_mob {
+        display: inherit;
+    }
+    .error_title h2{
+        font-size: 80px;
+    }
+    .error_title p{
+        font-size: 20px;
+
+    }
 
 }
